@@ -56,7 +56,7 @@ collections:
           - resource
 
       - label: Pet Type
-        name: resourcetype
+        name: pet_type
         required: true
         widget: select
         options:
