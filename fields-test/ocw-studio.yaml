@@ -13,38 +13,6 @@
               "widget": "boolean",
             },
             {
-              "label": "Title",
-              "name": "title",
-              "required": true,
-              "widget": "string",
-            },
-            {
-              "label": "Description",
-              "name": "description",
-              "widget": "markdown",
-            },
-            {
-              "label": "Courses",
-              "name": "courses",
-              "widget": "website-collection",
-            },
-          ],
-        "folder": "content/course-lists",
-        "label": "Subfields",
-        "name": "course-lists",
-      },
-      {
-        "category": "Content",
-        "fields":
-          [
-            {
-              "help": "Enable this setting to prevent publishing in production",
-              "label": "Draft",
-              "name": "draft",
-              "required": true,
-              "widget": "boolean",
-            },
-            {
               "label": "Description",
               "name": "description",
               "widget": "markdown",
@@ -64,7 +32,7 @@
               "widget": "relation",
             },
             {
-              "collection": "course-lists",
+              "collection": "subfields",
               "display_field": "title",
               "label": "Featured Courses List",
               "multiple": false,
@@ -73,18 +41,50 @@
               "widget": "relation",
             },
             {
-              "collection": "course-lists",
+              "collection": "subfields",
               "display_field": "title",
-              "label": "Course Lists",
+              "label": "Subfields",
               "multiple": true,
-              "name": "courselists",
+              "name": "subfields",
               "sortable": true,
               "widget": "relation",
             },
           ],
-        "folder": "content/collections",
+        "folder": "content/fields",
         "label": "Fields",
-        "name": "course-collection",
+        "name": "field",
+      },
+      {
+        "category": "Content",
+        "fields":
+          [
+            {
+              "help": "Enable this setting to prevent publishing in production",
+              "label": "Draft",
+              "name": "draft",
+              "required": true,
+              "widget": "boolean",
+            },
+            {
+              "label": "Title",
+              "name": "title",
+              "required": true,
+              "widget": "string",
+            },
+            {
+              "label": "Description",
+              "name": "description",
+              "widget": "markdown",
+            },
+            {
+              "label": "Courses",
+              "name": "courses",
+              "widget": "website-collection",
+            },
+          ],
+        "folder": "content/subfields",
+        "label": "Subfields",
+        "name": "subfield",
       },
     ],
   "root-url-path": "",
